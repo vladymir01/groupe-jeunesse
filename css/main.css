@@ -1,0 +1,70 @@
+body{
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding:0
+}
+
+header {
+  background-color: rebeccapurple;
+  width: 100vw;
+  padding: 1rem;
+  position:fixed;
+  top:0;
+  left: 0;
+}
+
+main {
+  min-height: 100vh;
+  /* background-color: aqua; */
+  margin-top: 8rem;
+}
+
+.container{
+  max-width:100rem ;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.container-image {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+.image {
+  width: 100%;
+}
+
+footer {
+  background-color: rebeccapurple;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.photos {
+  /* background-color: yellowgreen; */
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 45em){
+  .photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 44rem;
+  }
+  .container-image{
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 70em){
+  .photos{
+    max-width: 68rem ;
+  }
+}
+
+@media only screen and (min-width: 90em){
+  .photos{
+    max-width: 88rem ;
+  }
+}
